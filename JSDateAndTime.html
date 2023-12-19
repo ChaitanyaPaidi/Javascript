@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Dates</title>
+</head>
+<body>
+    <div class="container">
+        Current time is <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is the concept of Date and Time in Javascript")
+        let now=new Date()
+        console.log(now)
+
+        let dt=new Date(1000)
+        console.log(dt)
+
+        let newDate=new Date("2023-09-30")
+        console.log(newDate)
+
+        // let anoDate=new Date(year,month,date,hours,minutes,seconds,milliseconds)
+        let anoDate=new Date(3020,5,7,9,3,2,40) //Counting from month starts from zero
+        console.log(anoDate)
+        console.log("The Year is: "+anoDate.getFullYear())
+        console.log("The date is: "+anoDate.getDate())
+        console.log("The Month is: "+anoDate.getMonth())
+        console.log("The Hour: "+anoDate.getHours())
+
+        //You can also update dates
+        anoDate.setDate(15)
+        console.log(anoDate)
+
+        //It even corrects in the case of wrong input as follows
+        anoDate.setDate(35)
+        console.log(anoDate)
+
+        setInterval(updateTime,1000)
+        function updateTime(){
+            time.innerHTML=new Date()
+        }
+
+
+
+    </script>
+</body>
+</html>

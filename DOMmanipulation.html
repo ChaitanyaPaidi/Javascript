@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mnaipulating DOM</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About US</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+            <li>Help</li>
+        </ul>
+    </div>
+    <div class="container">
+        Another Container
+    </div>
+    <script>
+
+
+        let main=document.getElementById('main')
+        console.log(main)
+
+        let nav=document.getElementById('nav')
+        console.log(nav)
+
+        let containers=document.getElementsByClassName('container')
+        console.log(containers)
+
+        let sel=document.querySelector('.container')
+        console.log(sel)
+
+        let sel2=document.querySelector('#main')
+        console.log(sel2)
+
+
+        let sel3=document.querySelector('#nav>li')//returns first element in the list
+        console.log(sel3)
+
+        let sel4=document.querySelectorAll('#nav>li')//Returns all elements in the list
+        console.log(sel4)
+
+
+        console.log(main.innerHTML)
+        
+    </script>
+</body>
+</html>

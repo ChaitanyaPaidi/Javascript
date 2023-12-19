@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functions</title>
+</head>
+<body>
+    <div class="container">
+        This is arrow function tutorial
+    </div>
+
+    <script>
+        greet=()=>{
+            console.log("Good morning")
+        }
+        greet();
+
+        //Application of an arrow function
+        setTimeout(()=>{
+            console.log("We are in setTimeout")
+        }, 3000)
+
+        //Another Example
+        let sum=(a,b)=>{
+            return a+b;
+        }
+        console.log(sum(23,34))
+
+        //More Simplification
+        let sum2=(a,b)=>a+b;
+        console.log(sum2(223,34))
+
+        //There's no need to use parentheses for single argument
+        let half=a=>a/2
+        console.log(half(34))
+
+        //Another major difference between arrow function and normal function is that "this" object in an arrow function can mean any object that is present in an object literal whereas in the case of normal function "this" can only mean an obbject referred which is present in that particular function
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age=prompt("Enter your age")
+        console.log(age)
+        if(age==null){
+            console.log("Please try again")
+        }
+        if(age>18){
+            let cn=confirm("please confirm that you are greater than 18")
+            if(cn){
+                console.log("Your slot booking is confirmed")
+            }
+        }
+        else{
+            console.log("You are not allowed to this pub")
+        }
+    </script>
+</body>
+</html>
